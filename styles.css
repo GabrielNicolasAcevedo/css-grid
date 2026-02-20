@@ -1,3 +1,5 @@
+/* Fruit box */
+
 .fruit-box {
     /* width: 300px; */
     padding: 4px;
@@ -26,4 +28,45 @@
 .orange {
     background: orange;
     grid-column: left / right;
+}
+
+
+/* Apartment */
+
+.container {
+    display: inline-grid;
+    grid-template: repeat(5, 40px) / repeat(5, 40px);
+    background-color: lightblue;
+}
+
+.room {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+}
+
+#living-room {
+    grid-column: 1/6;
+    grid-row: 1/3;
+}
+
+#kitchen {
+    grid-column: 4/6;
+    grid-row: 3/6;
+
+}
+
+#bedroom {
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+
+#bathroom {
+    grid-column: 3/4;
+    grid-row: 3/6;
+}
+
+#closet {
+    grid-column: 1/3;
+    grid-row: 5/6;
 }
